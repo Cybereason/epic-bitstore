@@ -1,0 +1,36 @@
+setup:
+  name: epic-bitstore
+  description: Multi-tiered cloud-backed blob storage system
+  long_description:
+    filename: README.md
+    content_type: text/markdown
+  author: Yonatan Perry, Uri Sternfeld, Assaf Ben-David
+  license: MIT License
+  url: https://github.com/Cybereason/epic-bitstore
+
+  python_requires: ">=3.10"
+  top_packages:
+    - epic
+  version_module_paths:
+    - epic/bitstore
+
+  install_requires:
+    - epic-common
+    - epic-logging
+
+  extras_require:
+    aws:
+      - boto3
+    gcp:
+      - requests
+      - google-auth
+      - google-cloud-storage
+
+  classifiers:
+    - "Development Status :: 4 - Beta"
+    - "Intended Audience :: Developers"
+    - "Operating System :: POSIX :: Linux"
+    - "Operating System :: MacOS :: MacOS X"
+    - "Operating System :: Microsoft :: Windows"
+    - "Programming Language :: Python :: 3 :: Only"
+    - "Programming Language :: Python :: 3.10"

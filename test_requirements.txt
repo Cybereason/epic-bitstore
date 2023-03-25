@@ -1,0 +1,10 @@
+pytest
+pytest-cov
+pytest-timeout
+pytest-repeat
+
+boto3
+requests
+google-auth
+google-cloud-storage
+ultima
